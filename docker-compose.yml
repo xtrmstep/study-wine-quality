@@ -2,7 +2,8 @@ version: '3'
 services:
 
     jupyter:
-        image: jupyter/scipy-notebook:python-3.9.2
+        # the image tag python-3.9.2 is not working on Mac, this tga works
+        image: jupyter/scipy-notebook:33add21fab64
         container_name: jupyter
         ports:
         - "8888:8888"
